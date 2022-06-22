@@ -2,6 +2,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
 }
 body{
     background-color: lightgreen;
@@ -207,8 +209,8 @@ nav{
 .test-sections div{
     display: block;
     justify-content: center;
-    padding: 2% auto;
-    margin: 2% auto;
+    padding: 1% auto;
+    margin: 1% auto;
 }
 .test-sections h4{
     padding-top: 1%;
@@ -224,8 +226,8 @@ nav{
 
 
 .num-sections{
-    /* background-image: url('/yoga/asset/yoga5.jpg'); */
-    background-color: wheat;
+
+    background-color: rgb(235, 217, 184);
     color: darkgreen;
     max-width: 100%;
     background-position: center;
@@ -370,3 +372,4 @@ form button{
     text-align: center;
     color: black;
 }
+
