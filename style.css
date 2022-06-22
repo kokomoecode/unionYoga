@@ -1,0 +1,357 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgreen;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: lightgreen;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    background-color: lightcoral;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    text-shadow: 1px 1px rgb(98, 95, 95);
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        background-color: lightgreen;
+        
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px)
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px)
+}
+
+.main-img{
+    width: 100%;
+}
+
+.join-us{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.join-us h2{
+
+    padding: 2%;
+}
+.join-us p{
+
+    padding: 2% 5%;
+    font-size: 20px;
+
+}
+.join-us a{
+    border: 2px solid darkgreen;
+    background-color: darkgreen;
+    color: white;
+    
+}
+
+.join-us a:hover{
+    background-color: rgb(40, 135, 40);
+    color: lightcoral;
+
+    
+}
+
+.class-sections{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 3%;
+    background-color: white;
+    padding-bottom: 4%;
+}
+
+.class-sections div img {
+    width: 100%;
+    align-content: center;
+    object-fit: contain;
+
+}
+
+.class-sections div {
+    width: 24%;
+    display: block;
+    box-shadow: tomato;
+    border: 2px solid lightgreen;
+}
+
+
+.class-sections div h3{
+    text-align: center;
+    padding-top: 2%;
+}
+
+.class-sections div p{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.test-sections{
+    border: 2px solid gold;
+}
+
+.test-sections h3{
+    text-align: center;
+    padding-top: 3%;
+}
+
+.test-sections div{
+    display: block;
+    justify-content: center;
+    padding: 2% auto;
+    margin: 2% auto;
+}
+.test-sections h4{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.test-sections p{
+    padding-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.num-sections{
+    background-color: aliceblue;
+}
+
+.num-sections h1{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%
+}
+
+.stats-sections{
+    padding: 0% 0% 5% 17%;
+
+}
+
+.stats-sections div{
+    border: 2px solid gold;
+    display: inline-block;
+    flex-direction: row;
+    text-align: center;
+    width: 20%;
+    position: relative;
+    object-fit: contain;
+
+}
+
+.stats-sections div h2{
+    font-size: 50px;
+
+}
+.stats-sections div a{
+    font-size: 20px;
+    
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    
+    background-color: linear-gradient( lightgreen, darkgreen);
+    color: black;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+
+    text-align: center;
+    align-items: center;
+
+}
+
+
+.col h3{
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid darkgreen;
+}
+
+.email-id{
+    border-bottom: 1px solid darkgreen;
+    margin: 20px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-links{
+    padding-top: 10%;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.address{
+    padding-top: 10%;
+}
+
+.footer-links li a{ 
+    list-style: none;
+    color: black;
+}
+
+form{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid darkgreen;
+    margin-bottom: 50px;
+    padding-top: 10%;
+
+}
+
+
+form input{
+    width: 100%;
+    background-color: lightcoral;
+    color: white;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    
+    background: transparent;
+    border: 1px solid darkgreen;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
+#media h3{
+    border-bottom: 1px solid darkgreen;
+    
+}
+
+
+#media a{
+
+    text-decoration: none;
+    width: auto;
+    text-align: center;
+    color: black;
+}
