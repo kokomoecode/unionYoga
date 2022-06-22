@@ -6,7 +6,7 @@
     
 }
 body{
-    background-color: lightgreen;
+    background-color: rgb(161, 236, 161);;
 }
 
 nav{
@@ -137,11 +137,10 @@ nav{
 
 .join-us h2{
 
-    padding: 2%;
+    padding-top: 2%;
 }
 .join-us p{
-
-    padding: 2% 5%;
+    padding: 2% 15%;
     font-size: 20px;
 
 }
@@ -199,6 +198,7 @@ nav{
 
 .test-sections{
     border: 2px solid gold;
+    background-color: rgb(161, 236, 161);
 }
 
 .test-sections h3{
@@ -373,3 +373,7 @@ form button{
     color: black;
 }
 
+#footer-bio{
+    padding-top: 5%;
+    margin: 0% 8%;
+}
