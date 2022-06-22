@@ -27,11 +27,14 @@ nav{
     text-align: center;
 }
 
+
+
 .nav-links{
     display: flex;
     justify-content: space-around;
     width: 50%;
-    text-shadow: 1px 1px rgb(98, 95, 95);
+
+    
 }
 
 .nav-links li{
@@ -43,7 +46,8 @@ nav{
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
+    text-shadow: 1px 2px rgb(1, 78, 36);
 }
 
 .burger{
@@ -159,8 +163,9 @@ nav{
     justify-content: space-between;
     width: 100%;
     padding-top: 3%;
-    background-color: white;
+    background-color: wheat;
     padding-bottom: 4%;
+    
 }
 
 .class-sections div img {
@@ -175,6 +180,7 @@ nav{
     display: block;
     box-shadow: tomato;
     border: 2px solid lightgreen;
+    box-shadow: 10px 10px 5px darkgreen;
 }
 
 
@@ -216,8 +222,16 @@ nav{
     margin-right: 10%;
 }
 
+
 .num-sections{
-    background-color: aliceblue;
+    /* background-image: url('/yoga/asset/yoga5.jpg'); */
+    background-color: wheat;
+    color: darkgreen;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat,repeat;
+    height: auto;
+    opacity: 1;
 }
 
 .num-sections h1{
@@ -233,6 +247,7 @@ nav{
 
 .stats-sections div{
     border: 2px solid gold;
+    box-shadow: 10px 10px 5px goldenrod;
     display: inline-block;
     flex-direction: row;
     text-align: center;
